@@ -2,7 +2,7 @@
 function App() {
   return (
     <div>
-      <h1>Éste es mi componente App con React!</h1>
+      <h1></h1>
         <Header/>
     </div>
   );
