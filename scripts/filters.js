@@ -18,6 +18,15 @@ class Filters extends React.Component {
       <div>
         <input type="date" onChange={this.handleOnClick}></input>
         <input type="date" onChange={this.handleOnClick2}></input>
+        <select>
+          <option value="available"> Todos los países</option>
+        </select>
+        <select>
+        <option value="available"> Cualquier precio </option>
+        </select>
+        <select>
+        <option value="available"> Cualquier tamaño </option>
+        </select>
       </div>
     );
   }
