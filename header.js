@@ -1,8 +1,5 @@
-//import today from './data.js'
 
-
-
-function Header() {
+const Header = () => {
   const today = new Date().toDateString();
     return (
       <div>
@@ -11,5 +8,3 @@ function Header() {
       </div>
     );
   }
-
-console.log(today)

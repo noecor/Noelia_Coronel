@@ -1,3 +1,17 @@
+
+const InitDate = () => {
+  const today = new Date().toDateString();
+    return (
+      <div>
+        <h1>InitDate</h1>
+        <p> desde el { today } hasta el { today } </p>
+      </div>
+    );
+  }
+
+
+
+
 /*class InitDate extends React.Component {
     constructor(props) {
       super(props);
