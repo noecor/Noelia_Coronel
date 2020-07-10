@@ -1,5 +1,5 @@
 
-const InitDate = () => {
+/*const InitDate = () => {
 
     return (
       <div>
@@ -7,13 +7,13 @@ const InitDate = () => {
         <input type="date"></input>
       </div>
     );
-  }
+  }*/
 
-/* no funciona class:
+
 class InitDate extends React.Component {
   state= {
-    initialDate: null ;
-    endDate: null  ;
+    initialDate: null,
+    endDate: null,
   }
   render(){
     return (
@@ -23,4 +23,4 @@ class InitDate extends React.Component {
       </div>
     );
   }
-}*/
+}
