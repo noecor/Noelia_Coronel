@@ -20,6 +20,7 @@ class Filters extends React.Component {
         <input type="date" onChange={this.handleOnClick2}></input>
         <select>
           <option value="available"> Todos los países</option>
+          <option value="available"> {hotelsData.map(h=> h.country)} </option>
         </select>
         <select>
         <option value="available"> Cualquier precio </option>
