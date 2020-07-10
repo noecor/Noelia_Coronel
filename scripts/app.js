@@ -4,7 +4,8 @@ const App = () => {
     <div>
       <h1></h1>
         <Header/>
-        <InitDate/>
+        <Filters/>
+        <Card/>
     </div>
   );
 }
