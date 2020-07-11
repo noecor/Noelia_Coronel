@@ -16,6 +16,8 @@ class Filters extends React.Component {
   render(){
     let paisOption = pais.map(e => 
       <option key={e}>{e}</option>);
+    let priceOption = prices.map(e =>
+    <option key={e}>{e}</option>);
     return (
       <div>
         <input type="date" value={'DD/MM/YYYY'} onChange={this.handleOnClick}></input>
@@ -25,7 +27,8 @@ class Filters extends React.Component {
           {paisOption}
         </select>
         <select>
-        <option value="available"> Cualquier precio </option>
+         <option value="available"> Cualquier precio </option>
+         {priceOption}
         </select>
         <select>
         <option value="available"> Cualquier tamaño </option>

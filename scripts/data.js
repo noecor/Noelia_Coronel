@@ -230,3 +230,12 @@ hotelsData.forEach(e => {
     pais.push(e.country);
   }
 });
+
+let prices =[];
+hotelsData.forEach(e =>{
+  if(prices.includes(e.price)){
+
+  }else {
+    prices.push(e.country);
+  }
+});
