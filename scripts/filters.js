@@ -14,10 +14,10 @@ class Filters extends React.Component {
 
 
   render(){
-    let paisOption = pais.map(e => 
-      <option key={e}>{e}</option>);
-    let priceOption = prices.map(e =>
-    <option key={e}>{e}</option>);
+      const paisOption = pais.map(e => 
+        <option key={e}>{e}</option>);
+      const priceOption = prices.map(e =>
+        <option key={e}>{e}</option>);
     return (
       <div>
         <input type="date" value={'DD/MM/YYYY'} onChange={this.handleOnClick}></input>
@@ -32,6 +32,9 @@ class Filters extends React.Component {
         </select>
         <select>
         <option value="available"> Cualquier tamaño </option>
+        <option value="available"> Hotel pequeño </option>
+        <option value="available"> Hotel mediano </option>
+        <option value="available"> Hotel grande </option>
         </select>
       </div>
     );

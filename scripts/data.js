@@ -222,7 +222,7 @@ const hotelsData = [
   }
 ]
 
-let pais = [];
+const pais = [];
 hotelsData.forEach(e => {
   if(pais.includes(e.country)) {
 
@@ -230,12 +230,13 @@ hotelsData.forEach(e => {
     pais.push(e.country);
   }
 });
-
-let prices =[];
+const prices =[];
 hotelsData.forEach(e =>{
   if(prices.includes(e.price)){
 
   }else {
-    prices.push(e.country);
+    prices.push(e.price);
   }
 });
+
+
