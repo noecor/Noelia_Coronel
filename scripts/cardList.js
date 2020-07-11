@@ -8,7 +8,8 @@ class CardList extends React.Component {
         hotelImageUrl={h.photo}
         title={h.name}
         description={h.description}
-        location={h.city, h.country}
+        city={h.city}
+        country={h.country}
         rooms={h.rooms}
         price={h.price}
         key={h.name}
