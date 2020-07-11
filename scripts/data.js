@@ -239,4 +239,4 @@ hotelsData.forEach(e =>{
   }
 });
 
-
+const images = () => hotelsData.map(h=> h.photo)

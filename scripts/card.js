@@ -1,11 +1,13 @@
 class Card extends React.Component {
-    /*{state= {
-        initialDate: null,
-    }}*/
     render(){
         return (
         <div>
-            <p> prueba </p>
+            <div className="image">
+                <img src={this.props.hotelImageUrl} alt="hotel" />
+            </div>
+            <div className="title">
+                <p>{this.props.title}</p> 
+            </div>
         </div>
         );
     }
