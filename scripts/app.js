@@ -5,7 +5,7 @@ const App = () => {
       <h1></h1>
         <Header/>
         <Filters/>
-        <Card/>
+        <CardList/>
     </div>
   );
 }
