@@ -1,7 +1,7 @@
 class Card extends React.Component {
     render(){
         return (
-        <div>
+        <div className="wrapper">
             <div className="image">
                 <img src={this.props.hotelImageUrl} alt="hotel" width="300"/>
             </div>
