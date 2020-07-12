@@ -222,12 +222,12 @@ const hotelsData = [
   }
 ]
 
-const pais = [];
+const countries = [];
 hotelsData.forEach(e => {
-  if(pais.includes(e.country)) {
+  if(countries.includes(e.country)) {
 
   } else {
-    pais.push(e.country);
+    countries.push(e.country);
   }
 });
 const prices =[];
@@ -239,4 +239,4 @@ hotelsData.forEach(e =>{
   }
 });
 
-const images = () => hotelsData.map(h=> h.photo)
+

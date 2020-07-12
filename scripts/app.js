@@ -1,14 +1,16 @@
-
-const App = () => {
-  return (
-    <div>
-      <h1></h1>
-        <Header/>
-        <Filters/>
-        <CardList/>
-    </div>
-  );
+class App extends React.Component {
+  state={
+    hoteles: [],
+  }
+  render() {
+    return (
+      <div>
+        <Header />
+        <Filters />
+        <CardList />
+      </div>
+    );
+  }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"))
-
+ReactDOM.render(<App />, document.getElementById("app"));
