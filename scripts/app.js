@@ -1,4 +1,5 @@
 let country;
+let price;
 
 class App extends React.Component {
   state={
@@ -10,12 +11,19 @@ class App extends React.Component {
     console.log("adding a hotel"+hotel);
     this.filterHotel();
   };
+
+  filterPrice= () =>{
+
+  }
   
   filterHotel = () =>{
     let arrayTemp = hotelsData;
     arrayTemp = arrayTemp.filter(h=> country === h.country);
+
+    
     this.setState({ hoteles: arrayTemp });
   }
+
   render() {
     return (
       <div>
