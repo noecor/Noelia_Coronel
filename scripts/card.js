@@ -20,7 +20,7 @@ class Card extends React.Component {
             <div>
                 <p>{this.props.price}</p>
             </div>
-            <button onclick={this.props.addHotel()}>Reservar</button>
+            <button>Reservar</button>
         </div>
         );
     }

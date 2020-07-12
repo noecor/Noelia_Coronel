@@ -5,6 +5,8 @@ class App extends React.Component {
 
   addHotel = hotel =>{
     console.log("adding a hotel")
+    const hotels = {...this.state.hoteles}
+    this.setState()
   };
   render() {
     return (
