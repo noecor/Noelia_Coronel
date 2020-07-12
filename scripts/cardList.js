@@ -13,9 +13,12 @@ class CardList extends React.Component {
         rooms={h.rooms}
         price={h.price}
         key={h.name}
-        id={h.name}          
+        id={h.name}   
+        addHotel={this.props.addHotel}       
       />
     ));
-    return (<div className="ui unstackable items">{cardComponents}</div>);
-}
+    return (
+      <div className="ui unstackable items">{cardComponents}</div>
+    );
+  }
 }
