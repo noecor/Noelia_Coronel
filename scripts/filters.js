@@ -13,8 +13,10 @@ class Filters extends React.Component {
   handleOnClickDate2 = (event) => {
     this.setState({ endDate: event.target.value });
   };
-  handleOnClickcountry = (event) => {
+  handleOnClickCountry = (event) => {
+    console.log("country"+event.target.value);
     this.setState({ country: event.target.value });
+    this.props.filterCountryProp(event.target.value);
   }
   handleOnClickPrice = (event) =>{
     this.setState({ price: event.target.value });
@@ -30,7 +32,7 @@ class Filters extends React.Component {
       <div>
         <input type="date" value={ this.state.initialDate } onChange={this.handleOnClickDate}></input>
         <input type="date" value={ this.state.endDate } onChange={this.handleOnClickDate2}></input>
-        <select onChange={this.handleOnClickcountry}>
+        <select onChange={this.handleOnClickCountry}>
           <option key="all"> Todos los países</option>
           {countryOption}
         </select>
