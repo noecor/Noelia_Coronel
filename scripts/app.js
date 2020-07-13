@@ -7,19 +7,17 @@ class App extends React.Component {
   state = {
     hoteles: hotelsData,
     initialDate: "",
-    initialDate2: today.toDateString(),
     endDate:"",
-    initialDate2: today.toDateString(),
   };
 
   addInitialDate=(date)=>{
-    this.setState({ initialDate: date, initialDate2: Date(date) }, () => this.filterHotel())
-    console.log("esto es date"+date);
+    this.setState({ initialDate: date }, () => this.filterHotel())
+    console.log("esto es addInitialdate 1 "+date);
   }
 
   addEndDate=(date)=>{
     this.setState({ endDate: date }, () => this.filterHotel())
-    console.log("esto es End date"+date);
+    console.log("esto es addEnddate1 "+date);
   }
 
   filterCountry = (hotel) => {
@@ -76,7 +74,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header addInitialDateProp={this.state.initialDate2} addEndDateProp={this.state.endDate}/>
+        <Header addInitialDateProp={this.state.initialDate} addEndDateProp={this.state.endDate}/>
         <Filters
           filterCountryProp={this.filterCountry}
           filterPriceProp={this.filterPrice}
@@ -91,11 +89,4 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById("app"));
-//copio el estado
-{
-  /* const hotels = {...this.state.hoteles}
-    //agrego el hotel a el estado de App
 
-    //actualizo el estado
-  this.setState({ hoteles: hotels})*/
-}

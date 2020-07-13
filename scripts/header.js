@@ -1,27 +1,22 @@
-class Header extends React.Component {
-  selectedDate = (date) => {
-    console.log("este param es"+date)
-    if (date === "") {
-      today;
-    } else {
-      date;
-    }
-  };
+const selectedDate = (date) =>{ 
+  console.log ("este es el parámetro"+date);
+  if (date === "") {
+    return today.toDateString();
+  } else {
+    return new Date(date).toDateString();
+  }
+}
 
+class Header extends React.Component {
   render() {
-    const InDate = this.props.addInitialDateProp;
-    console.log("esto es indate"+InDate)
     return (
       <div>
         <h1>Hoteles</h1>
         <p>
-          desde el {this.props.addInitialDateProp} hasta el {this.props.addEndDateProp}
+          desde el {selectedDate(this.props.addInitialDateProp)} hasta el {selectedDate(this.props.addEndDateProp)}
         </p>
       </div>
     );
   }
 }
 
-{
-  /*  today = new Date().toDateString(); */
-}
