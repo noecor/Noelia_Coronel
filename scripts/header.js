@@ -1,15 +1,25 @@
 class Header extends React.Component {
-  state = {
-    date: today,
-  }
+  selectedDate = (date) => {
+    console.log("este param es"+date)
+    if (date === "") {
+      today;
+    } else {
+      date;
+    }
+  };
+
   render() {
     return (
       <div>
         <h1>Hoteles</h1>
-        <p> desde el { today.toDateString() } hasta el { today.toDateString() } </p>
+        <p>
+          desde el {this.selectedDate("banana")} hasta el {this.props.addEndDateProp}{" "}
+        </p>
       </div>
     );
   }
 }
 
-{/*  today = new Date().toDateString(); */}
+{
+  /*  today = new Date().toDateString(); */
+}
