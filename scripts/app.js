@@ -7,11 +7,13 @@ class App extends React.Component {
   state = {
     hoteles: hotelsData,
     initialDate: "",
+    initialDate2: today.toDateString(),
     endDate:"",
+    initialDate2: today.toDateString(),
   };
 
   addInitialDate=(date)=>{
-    this.setState({ initialDate: date }, () => this.filterHotel())
+    this.setState({ initialDate: date, initialDate2: Date(date) }, () => this.filterHotel())
     console.log("esto es date"+date);
   }
 
@@ -74,7 +76,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header addInitialDateProp={this.state.initialDate} addEndDateProp={this.state.initialDate}/>
+        <Header addInitialDateProp={this.state.initialDate2} addEndDateProp={this.state.endDate}/>
         <Filters
           filterCountryProp={this.filterCountry}
           filterPriceProp={this.filterPrice}
