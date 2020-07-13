@@ -3,9 +3,9 @@ const selectedDate = (date) =>{
   console.log ("este es el parámetro"+date);
   var options = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
   if (date === "") {
-    return today.toLocaleDateString("es-ES", options);
+    return today.toLocaleDateString("es-AR", options);
   } else {
-    return new Date(date).toLocaleDateString("es-ES", options);
+    return new Date(date).toLocaleDateString("es-AR", options);
   }
 }
 

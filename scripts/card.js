@@ -1,3 +1,22 @@
+const selectedPrice = (price) =>{ 
+    console.log ("este es el parámetro price"+price);
+    switch (price) {
+        case 1:
+        return "$"
+        break;
+        case 2:
+        return "$$"
+        break;
+        case 3:
+        return "$$$"
+        break;
+        case 4:
+        return "$$$$"
+        break;
+        default:
+            console.log("no se imprimio")
+    }
+  }
 class Card extends React.Component {
     render(){
         return (
@@ -18,7 +37,7 @@ class Card extends React.Component {
                 <p>{this.props.rooms} Habitaciones</p>
             </div>
             <div>
-                <p>{this.props.price}</p>
+                <p>{selectedPrice(this.props.price)}</p>
             </div>
             <button>Reservar</button>
         </div>
