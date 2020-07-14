@@ -1,7 +1,7 @@
+
 let country = "all";
 let price = "all";
 let size = "all";
-
 
 class App extends React.Component {
   state = {
@@ -12,29 +12,24 @@ class App extends React.Component {
 
   addInitialDate=(date)=>{
     this.setState({ initialDate: date }, () => this.filterHotel())
-    console.log("esto es addInitialdate 1 "+date);
   }
 
   addEndDate=(date)=>{
     this.setState({ endDate: date }, () => this.filterHotel())
-    console.log("esto es addEnddate1 "+date);
   }
 
   filterCountry = (hotel) => {
     country = hotel;
-    console.log("country selected" + hotel);
     this.filterHotel();
   };
 
   filterPrice = (hotel) => {
     price = hotel;
-    console.log("price selected " + hotel);
     this.filterHotel();
   };
 
   filterSize = hotel =>{
     size = hotel;
-    console.log("size selected"+size)
     this.filterHotel();
   };
 

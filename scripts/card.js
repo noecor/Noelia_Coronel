@@ -1,5 +1,4 @@
 const selectedPrice = (price) =>{ 
-    console.log ("este es el parámetro price"+price);
     switch (price) {
         case 1:
         return "$"
@@ -14,13 +13,13 @@ const selectedPrice = (price) =>{
         return "$$$$"
         break;
         default:
-            console.log("no se imprimio")
+            console.log("no se imprimió")
     }
   }
 class Card extends React.Component {
     render(){
         return (
-        <div className="wrapper">
+        <div className="wrapper Card">
             <div className="image">
                 <img src={this.props.hotelImageUrl} alt="hotel" width="300"/>
             </div>

@@ -1,6 +1,5 @@
 
 const selectedDate = (date) =>{ 
-  console.log ("este es el parámetro"+date);
   var options = {weekday: "long", year: "numeric", month: "long", day: "numeric"};
   if (date === "") {
     return today.toLocaleDateString("es-AR", options);

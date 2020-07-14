@@ -16,12 +16,10 @@ class Filters extends React.Component {
     this.props.addEndDateProp(event.target.value);
   };
   handleOnClickCountry = (event) => {
-    console.log("country"+event.target.value);
     this.setState({ country: event.target.value });
     this.props.filterCountryProp(event.target.value);
   }
   handleOnClickPrice = (event) =>{
-    console.log("price"+event.target.value);
     this.setState({ price: event.target.value });
     this.props.filterPriceProp(event.target.value)
   };

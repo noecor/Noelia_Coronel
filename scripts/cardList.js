@@ -1,7 +1,4 @@
 class CardList extends React.Component {
-  state= {
-    hoteles: [],
-  }
   render() {
     const cardComponents = this.props.visibleHotels.map( h => (
       <Card
@@ -17,7 +14,7 @@ class CardList extends React.Component {
       />
     ));
     return (
-      <div className="ui unstackable items">{cardComponents}</div>
+      <div className="Wrapper-CardList">{cardComponents}</div>
     );
   }
 }
