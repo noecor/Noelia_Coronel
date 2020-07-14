@@ -31,21 +31,21 @@ class Filters extends React.Component {
   render() {
     const countryOption = countries.map((e) => <option key={e}>{e}</option>);
     return (
-      <div>
-        <input type="date" value={ this.state.initialDate } onChange={this.handleOnClickDate}></input>
-        <input type="date" value={ this.state.endDate } onChange={this.handleOnClickDate2}></input>
-        <select onChange={this.handleOnClickCountry}>
-          <option value="all"> Todos los países</option>
+      <div className="filters">
+        <input className="width-filter" type="date" value={ this.state.initialDate } onChange={this.handleOnClickDate}></input>
+        <input className="width-filter" type="date" value={ this.state.endDate } onChange={this.handleOnClickDate2}></input>
+        <select className="width-filter" onChange={this.handleOnClickCountry}>
+          <option className="width-filter" value="all"> Todos los países</option>
           {countryOption}
         </select>
-        <select onChange={this.handleOnClickPrice}>
+        <select className="width-filter" onChange={this.handleOnClickPrice}>
           <option value="all">Cualquier precio</option>
           <option value="1">$</option>
           <option value="2">$$</option>
           <option value="3">$$$</option>
           <option value="4">$$$$</option>
         </select>
-        <select onChange={this.handleOnClickSize}>
+        <select className="width-filter" onChange={this.handleOnClickSize}>
           <option value="all"> Cualquier tamaño </option>
           <option value="little"> Hotel pequeño </option>
           <option value="medium"> Hotel mediano </option>

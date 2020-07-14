@@ -30,15 +30,17 @@ class Card extends React.Component {
                 <p>{this.props.description}</p>
             </div>
             <div>
+                <i className="material-icons">room</i>
                 <p>{this.props.city}, {this.props.country}</p>
             </div>
             <div>
+                <i className="material-icons">hotel</i>
                 <p>{this.props.rooms} Habitaciones</p>
             </div>
             <div>
                 <p>{selectedPrice(this.props.price)}</p>
             </div>
-            <button>Reservar</button>
+            <button className="btn">Reservar</button>
         </div>
         );
     }
