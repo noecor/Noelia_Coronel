@@ -222,14 +222,7 @@ const hotelsData = [
   }
 ]
 
-const countries = [];
-hotelsData.forEach(e => {
-  if(countries.includes(e.country)) {
 
-  } else {
-    countries.push(e.country);
-  }
-});
 
 
 

@@ -50,10 +50,22 @@ body{
 .width-filter{
     margin-left: 10px;
     width: 200px;
+    border-radius: 4px;
+    border-color: transparent;
 }
 .Wrapper-CardList{
     background-color: white;
 }
+
+.notice{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 500px;
+    display: inline-block;
+}
+.removeNotice {
+    display: none;
+  }
 
 .btn{
     background-color: teal;

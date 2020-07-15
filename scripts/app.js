@@ -63,7 +63,13 @@ class App extends React.Component {
       arrayTemp = arrayTemp.filter(hotel => hotel.rooms > 20)
     }
     
+    if(arrayTemp.length === 0){
+      alert ("Lo sentimos, no hay resultados coincidentes con tu solicitud.");
+    }
+    
     this.setState({ hoteles: arrayTemp });
+
+    
   };
 
   render() {
