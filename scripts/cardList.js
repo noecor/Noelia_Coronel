@@ -14,9 +14,7 @@ class CardList extends React.Component {
       />
     ));
     return (
-      <div className="Wrapper-CardList">{cardComponents}
-        <p id="Notice" className="removeNotice">Lo sentimos, no hay resultados coincidentes con tu solicitud.</p>
-      </div>
+      <div className="Wrapper-CardList">{cardComponents}</div>
     );
   }
 }

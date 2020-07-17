@@ -13,15 +13,15 @@ const selectedPrice = (price) =>{
         return "$$$$"
         break;
         default:
-            console.log("no se imprimió")
+            console.log("no se imprimió selectedPrice")
     }
   }
 class Card extends React.Component {
     render(){
         return (
-        <div className="wrapper Card">
+        <div className="wrapper-Card">
             <div className="image">
-                <img src={this.props.hotelImageUrl} alt="hotel" width="300"/>
+                <img src={this.props.hotelImageUrl} alt="hotel" width="250"/>
             </div>
             <div className="title">
                 <p>{this.props.title}</p> 

@@ -30,7 +30,7 @@ body{
     font-weight: 400;
     font-size: 16px;
 }
-
+/* HEADER */
 .header{
     height: 70px;
     background-color: teal;
@@ -41,6 +41,8 @@ body{
     font-weight: bold;
     font-size: 34px;
 }
+
+/* FILTERS */
 .filters{
     padding: 10px;
     display: flex;
@@ -53,22 +55,40 @@ body{
     border-radius: 4px;
     border-color: transparent;
 }
+
+/* CARDLIST */
 .Wrapper-CardList{
     background-color: white;
+    width: 80%;
+    margin: 25px auto 75px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.notice{
-    padding-top: 50px;
-    margin: 0 auto;
-    width: 500px;
-    display: inline-block;
+.wrapper-Card{
+    width: 280px;
+    box-shadow: grey;
 }
-.removeNotice {
-    display: none;
-  }
+
+.image{
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+}
 
 .btn{
     background-color: teal;
     color: white;
     font-weight: bolder;
+    border-color: transparent;
+    width: 250px;
+    margin: 0 auto;
 }
