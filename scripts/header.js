@@ -1,7 +1,8 @@
 //Esta función toma la fecha seleccionada y la convierte a un formato legible. Cuando no hay ninguna seleccionada muestra la fecha del día actual.
 //Debajo el componente Header
 const selectedDate = (date) => {
-  var options = {
+  //especifico las opciones de localDateString
+  let options = {
     weekday: "long",
     year: "numeric",
     month: "long",

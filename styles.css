@@ -126,7 +126,7 @@ body {
 /* CARDLIST */
 .Wrapper-CardList {
   background-color: white;
-  width: 80%;
+  width: 90%;
   margin: 25px auto 5px;
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +138,7 @@ body {
 /* CARDs */
 .wrapper-Card {
   margin-top: 10px;
-  width: 280px;
+  width: 310px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px #888888;
 }
@@ -161,6 +161,8 @@ body {
   padding: 0px 10px;
   font-size: 15px;
   color: dimgray;
+  height: 160px;
+  margin: 5px;
 }
 
 .icon {
@@ -189,7 +191,7 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 4px;
-  width: 250px;
+  width: 280px;
   height: 25px;
   display: flex;
   background-color: whitesmoke;
@@ -218,7 +220,7 @@ body {
   color: white;
   font-weight: bolder;
   border-color: transparent;
-  width: 280px;
+  width: 310px;
   height: 30px;
   margin: 0 auto;
   line-height: 20px;
