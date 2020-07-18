@@ -4,7 +4,7 @@ class Filters extends React.Component {
     endDate: "",
     country: null,
     price: null,
-    size: null,
+    size: null
   };
 
   handleOnClickDate = (event) => {
@@ -18,24 +18,36 @@ class Filters extends React.Component {
   handleOnClickCountry = (event) => {
     this.setState({ country: event.target.value });
     this.props.filterCountryProp(event.target.value);
-  }
-  handleOnClickPrice = (event) =>{
-    this.setState({ price: event.target.value });
-    this.props.filterPriceProp(event.target.value)
   };
-  handleOnClickSize = (event) =>{
+  handleOnClickPrice = (event) => {
+    this.setState({ price: event.target.value });
+    this.props.filterPriceProp(event.target.value);
+  };
+  handleOnClickSize = (event) => {
     this.setState({ size: event.target.value });
-    this.props.filterSizeProp(event.target.value)
+    this.props.filterSizeProp(event.target.value);
   };
 
   render() {
     const countryOption = countries.map((e) => <option key={e}>{e}</option>);
     return (
       <div className="filters">
-        <input className="width-filter" type="date" value={ this.state.initialDate } onChange={this.handleOnClickDate}></input>
-        <input className="width-filter" type="date" value={ this.state.endDate } onChange={this.handleOnClickDate2}></input>
+        <input
+          className="width-filter"
+          type="date"
+          value={this.state.initialDate}
+          onChange={this.handleOnClickDate}
+        ></input>
+        <input
+          className="width-filter"
+          type="date"
+          value={this.state.endDate}
+          onChange={this.handleOnClickDate2}
+        ></input>
         <select className="width-filter" onChange={this.handleOnClickCountry}>
-          <option className="width-filter" value="all"> Todos los países</option>
+          <option className="width-filter" value="all">
+            Todos los países
+          </option>
           {countryOption}
         </select>
         <select className="width-filter" onChange={this.handleOnClickPrice}>
@@ -57,12 +69,9 @@ class Filters extends React.Component {
 }
 
 const countries = [];
-hotelsData.forEach(e => {
-  if(countries.includes(e.country)) {
-
+hotelsData.forEach((e) => {
+  if (countries.includes(e.country)) {
   } else {
     countries.push(e.country);
   }
 });
-
-
