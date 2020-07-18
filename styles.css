@@ -169,10 +169,11 @@ body {
   height: 20px;
   background-color: teal;
   padding: 5px;
+  border-radius: 4px;
 }
 
 .city {
-  padding: 0px 10px;
+  padding-left: 10px;
   font-size: 14px;
   color: dimgray;
   display: flex;
@@ -181,16 +182,25 @@ body {
   line-height: 25px;
 }
 .button {
-  padding: 5px 10px;
-  margin: 7px 0px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 4px;
   width: 250px;
   height: 25px;
   display: flex;
   background-color: whitesmoke;
 }
+.position-abs {
+  position: absolute;
+}
 
 .price {
+  margin-top: 5px;
+  margin-right: 19px;
+  padding-right: 10px;
   float: right;
   width: 40px;
   padding: 5px;
@@ -198,6 +208,8 @@ body {
   font-weight: bolder;
   color: white;
   background-color: teal;
+  margin-bottom: 5px;
+  position: relative;
 }
 
 .btn {
@@ -208,4 +220,5 @@ body {
   width: 280px;
   height: 30px;
   margin: 0 auto;
+  line-height: 20px;
 }
