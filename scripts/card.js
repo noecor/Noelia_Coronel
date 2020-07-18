@@ -1,3 +1,5 @@
+//Esta función maneja la información a mostrar en el select de precios, para que se muestren sólo signos $, en vez de los valores del array.
+//Debajo el componente Card
 const selectedPrice = (price) => {
   switch (price) {
     case 1:

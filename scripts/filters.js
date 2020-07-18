@@ -7,6 +7,7 @@ class Filters extends React.Component {
     size: null
   };
 
+  //Estas funciones toman los datos ingresados en los filtros, los guardan en el estado y le pasan la info a App a traves de Props.
   handleOnClickDate = (event) => {
     this.setState({ initialDate: event.target.value });
     this.props.addInitialDateProp(event.target.value);
@@ -67,6 +68,8 @@ class Filters extends React.Component {
     );
   }
 }
+
+// Esta Función recorre el array de países y hace un nuevo array sólo con los que no se repiten
 
 const countries = [];
 hotelsData.forEach((e) => {
