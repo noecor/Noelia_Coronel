@@ -1,18 +1,86 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,73 +90,122 @@ time, mark, audio, video {
   list-style: none;
 }
 
-body{
-    background-color: ghostwhite;
-    width: 80%;
-    margin: 0 auto;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+body {
+  background-color: ghostwhite;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 /* HEADER */
-.header{
-    height: 70px;
-    background-color: teal;
-    color: white;
-    padding: 30px;
+.header {
+  height: 70px;
+  background-color: teal;
+  color: white;
+  padding: 30px;
 }
-.header-title{
-    font-weight: bold;
-    font-size: 34px;
+.header-title {
+  font-weight: bold;
+  font-size: 34px;
 }
 
 /* FILTERS */
-.filters{
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    background-color: turquoise;
+.filters {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: turquoise;
 }
-.width-filter{
-    margin-left: 10px;
-    width: 200px;
-    border-radius: 4px;
-    border-color: transparent;
+.width-filter {
+  margin-left: 10px;
+  width: 200px;
+  border-radius: 4px;
+  border-color: transparent;
 }
 
 /* CARDLIST */
-.Wrapper-CardList{
-    background-color: white;
-    width: 80%;
-    margin: 25px auto 75px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.Wrapper-CardList {
+  background-color: white;
+  width: 80%;
+  margin: 25px auto 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px -20px floralwhite;
 }
 
-.wrapper-Card{
-    width: 280px;
-    box-shadow: grey;
+.wrapper-Card {
+  margin-top: 10px;
+  width: 280px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #888888;
 }
 
-.image{
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow:hidden;
+.image {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.title{
-    font-size: 20px;
-    font-weight: bolder;
+.title {
+  margin: 20px 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: dimgray;
 }
 
-.btn{
-    background-color: teal;
-    color: white;
-    font-weight: bolder;
-    border-color: transparent;
-    width: 250px;
-    margin: 0 auto;
+.description {
+  padding: 0px 10px;
+  font-size: 15px;
+  color: dimgray;
+}
+
+.icon {
+  padding-right: 10px;
+  padding-bottom: 5px;
+  color: white;
+  height: 20px;
+  background-color: teal;
+  padding: 5px;
+}
+
+.city {
+  padding: 0px 10px;
+  font-size: 14px;
+  color: dimgray;
+  display: flex;
+  width: 150px;
+  height: 20px;
+  line-height: 25px;
+}
+.button {
+  padding: 5px 10px;
+  margin: 7px 0px;
+  border-radius: 4px;
+  width: 250px;
+  height: 25px;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.price {
+  float: right;
+  width: 40px;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bolder;
+  color: white;
+  background-color: teal;
+}
+
+.btn {
+  background-color: teal;
+  color: white;
+  font-weight: bolder;
+  border-color: transparent;
+  width: 280px;
+  height: 30px;
+  margin: 0 auto;
 }
