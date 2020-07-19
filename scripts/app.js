@@ -52,7 +52,7 @@ class App extends React.Component {
     if (this.state.endDate !== null && this.state.endDate !== "") {
       arrayTemp = arrayTemp.filter(
         (hotel) =>
-          hotel.availabilityFrom >= new Date(this.state.endDate).valueOf()
+          hotel.availabilityTo >= new Date(this.state.endDate).valueOf()
       );
     }
 

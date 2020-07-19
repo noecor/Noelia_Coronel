@@ -1,13 +1,10 @@
 class Filters extends React.Component {
   state = {
     initialDate: "",
-    endDate: "",
-    country: null,
-    price: null,
-    size: null
+    endDate: ""
   };
 
-  //Estas funciones toman los datos ingresados en los filtros, los guardan en el estado y le pasan la info a App a traves de Props.
+  //Estas funciones toman los datos ingresados en los filtros, y le pasan la info a App a traves de Props.
   handleOnClickDate = (event) => {
     this.setState({ initialDate: event.target.value });
     this.props.addInitialDateProp(event.target.value);
@@ -17,15 +14,12 @@ class Filters extends React.Component {
     this.props.addEndDateProp(event.target.value);
   };
   handleOnClickCountry = (event) => {
-    this.setState({ country: event.target.value });
     this.props.filterCountryProp(event.target.value);
   };
   handleOnClickPrice = (event) => {
-    this.setState({ price: event.target.value });
     this.props.filterPriceProp(event.target.value);
   };
   handleOnClickSize = (event) => {
-    this.setState({ size: event.target.value });
     this.props.filterSizeProp(event.target.value);
   };
 

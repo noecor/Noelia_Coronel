@@ -20,29 +20,38 @@ const selectedPrice = (price) => {
 };
 class Card extends React.Component {
   render() {
+    const {
+      hotelImageUrl,
+      title,
+      description,
+      city,
+      country,
+      rooms,
+      price
+    } = this.props;
     return (
       <div className="wrapper-Card">
         <div className="image">
-          <img src={this.props.hotelImageUrl} alt="hotel" width="310" />
+          <img src={hotelImageUrl} alt="hotel" width="310" />
         </div>
         <div className="title">
-          <p>{this.props.title}</p>
+          <p>{title}</p>
         </div>
         <div>
-          <p className="description">{this.props.description}</p>
+          <p className="description">{description}</p>
         </div>
         <div className="button">
           <i className="material-icons icon">room</i>
           <p className="city">
-            {this.props.city}, {this.props.country}
+            {city}, {country}
           </p>
         </div>
         <div className="button position-abs">
           <i className="material-icons icon">hotel</i>
-          <p className="city ">{this.props.rooms} Habitaciones</p>
+          <p className="city ">{rooms} Habitaciones</p>
         </div>
         <div>
-          <p className="price">{selectedPrice(this.props.price)}</p>
+          <p className="price">{selectedPrice(price)}</p>
         </div>
         <button className="btn">Reservar</button>
       </div>

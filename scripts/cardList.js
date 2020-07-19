@@ -1,6 +1,6 @@
 class CardList extends React.Component {
   render() {
-    const cardComponents = this.props.visibleHotels.map( h => (
+    const cardComponents = this.props.visibleHotels.map((h) => (
       <Card
         hotelImageUrl={h.photo}
         title={h.name}
@@ -10,11 +10,9 @@ class CardList extends React.Component {
         rooms={h.rooms}
         price={h.price}
         key={h.name}
-        id={h.name}         
+        id={h.name}
       />
     ));
-    return (
-      <div className="Wrapper-CardList">{cardComponents}</div>
-    );
+    return <div className="Wrapper-CardList">{cardComponents}</div>;
   }
 }
